@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import '../styles/globals.css'
+import PromptInput from '@/components/PromptInput'
 
 export const metadata = {
   title: 'ImageGPT | Generate Images',
@@ -13,8 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='bg-black'>
         <Header />
+        <PromptInput />
         {children}</body>
     </html>
   )
